@@ -5,13 +5,13 @@ void convert_to_big_endian(uint32_t value, uint8_t arr[4]) {
     // Your code here
     uint32_t mask = 0xFF000000;
     uint8_t * ptr = arr;
-    uint32_t temp = 0;
+    // uint32_t temp = 0;
     // Assume the array is always 4 bytes
     for(int i = 24; i >= 0; i = i - 8) {
         // Shift by 24 bits, 16 bits, 8 bits, 0 bits
-        temp = (mask & value) >> i;
-
-        *ptr = temp;
+        *ptr = (mask & value) >> i;
+        // temp = (mask & value) >> i;
+        // *ptr = temp;
 
         // Move the pointer to the next index of the array
         ptr++;
