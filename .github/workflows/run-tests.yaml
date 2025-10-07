@@ -1,0 +1,28 @@
+name: C Test Runner
+
+# This workflow runs on any push or pull request to the 'main' branch
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build-and-test:
+    # Use the latest version of Ubuntu as the operating system for our job
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Check out the repository code so the workflow can access it
+      - name: Check out repository code
+        uses: actions/checkout@v4
+
+      # Step 2: Set up the specific version of Python we want to use
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      # Step 3: Run our test script. If the script exits with an error, this step fails.
+      - name: Run C Tests via Python Script
+        run: python run_tests.py
