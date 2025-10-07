@@ -1,0 +1,11 @@
+{
+  "test_cases": [
+    {
+      "name": "Test Case 1",
+      "inputs": [ "10", "3", "1" ],
+      "expected_outputs": [
+        "10"
+      ]
+    }
+  ]
+}
