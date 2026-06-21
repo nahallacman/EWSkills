@@ -1,0 +1,2 @@
+﻿include:
+  - component: $CI_SERVER_FQDN/shared-assets-group/components-repo/golden-path-default@main
