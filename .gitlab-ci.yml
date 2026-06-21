@@ -1,2 +1,2 @@
-include:
-  - component: gitlab.home.arpa/shared-assets-group/component-compliance-baseline/compliance-baseline@main
+﻿include:
+  - component: $CI_SERVER_FQDN/shared-assets-group/components-repo/golden-path-default@main
