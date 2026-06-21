@@ -1,2 +1,2 @@
 include:
-  - component: gitlab.home.arpa/DevOps/components/github-mirror/github-mirror@~latest
+  - component: gitlab.home.arpa/shared-assets-group/components-repo/compliance-baseline@main
